@@ -1,4 +1,43 @@
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
+body {
+    background-color: rgb(56, 102, 139);
+ }
+ .container {
+    border: 10px solid grey;
+   text-align: center;
+   width: 900px;
+   height: 300px;
+   background-color: rgb(186, 213, 235);
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 170px;
+  }
+  
+  
+ .form-control{
+   
+     text-align: center;
+     width: 510px;
+     height: 25px;
+    margin-top: 25px;
+ }
+  
+  
+ .btn {
+    padding-bottom: 10px;
+    margin: auto;
+    width: 510px;
+    height: 30px;
+    background-color: rgb(125, 179, 125);
+    text-align: center;
+    margin-top: 25px;
+  
+ }
+  
+  
+  
+ #searchbar {
+    padding-bottom: 10px;
+    margin: auto;
+    width: 500px;
+    height: 15px;
+ } 
