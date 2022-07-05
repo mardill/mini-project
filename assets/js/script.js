@@ -21,5 +21,25 @@ function fetchRecords(userInput, optionSelected) {
 
     fetch(url)
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => {
+        console.log(data);
+        for (var i = 0; i < 10; i++) {
+            var title = document.createElement("h2");
+            title.textContent = "Title: " + data.results[i].title;
+            var date = document.createElement("p");
+            date.textContent = "Date: " + data.results[i].date;
+            var subjects = document.createElement("p");
+            subjects.textContent = "Subjects: " + data.results[i].subject;
+            var readMore = document.createElement("button");
+            var link = document.createElement("a");
+            link.setAttribute("href", data.results[i].url);
+            link.textContent = "Read More";
+            readMore.appendChild(link);
+
+            document.getElementById("results-area").appendChild(title);
+            document.getElementById("results-area").appendChild(date);
+            document.getElementById("results-area").appendChild(subjects);
+            document.getElementById("results-area").appendChild(readMore);
+        }
+    });
 }
